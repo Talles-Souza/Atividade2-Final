@@ -76,7 +76,7 @@ public class AtividadeController {
 	@PutMapping
 	@Operation(summary="Atualizar os dados de atividade", description  = "Atividade atualizada")
 	@ApiResponses(value = { 
-			  @ApiResponse(responseCode = "200", description = "Atualiza com sucesso"),
+			  @ApiResponse(responseCode = "200", description = "Atualizado com sucesso"),
 			  @ApiResponse(responseCode = "400", description = "ID Inválido"), 
 			  @ApiResponse(responseCode = "403", description = "Você não tem permissão para acessar recurso"), 
 			  @ApiResponse(responseCode = "404", description = "Recurso não encontrado")})
