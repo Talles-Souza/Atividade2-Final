@@ -50,7 +50,7 @@ public class AtividadeController {
 	@GetMapping("/{id}")
 	@Operation(summary="Retornar uma atividade", description  = "Atividade")
 	@ApiResponses(value = { 
-			  @ApiResponse(responseCode = "200", description = "Listado com sucesso"),
+			  @ApiResponse(responseCode = "200", description = "Buscado com sucesso"),
 			  @ApiResponse(responseCode = "400", description = "ID Inválido"), 
 			  @ApiResponse(responseCode = "403", description = "Você não tem permissão para acessar recurso"), 
 			  @ApiResponse(responseCode = "404", description = "Recurso não encontrado")})
@@ -65,7 +65,7 @@ public class AtividadeController {
 	@PostMapping
 	@Operation(summary="Inserir os dados de atividade", description  = "Atividade adicionada")
 	@ApiResponses(value = { 
-			  @ApiResponse(responseCode = "200", description = "Listado com sucesso"),
+			  @ApiResponse(responseCode = "200", description = "Salvo com sucesso"),
 			  @ApiResponse(responseCode = "400", description = "ID Inválido"), 
 			  @ApiResponse(responseCode = "403", description = "Você não tem permissão para acessar recurso"), 
 			  @ApiResponse(responseCode = "404", description = "Recurso não encontrado")})
@@ -76,7 +76,7 @@ public class AtividadeController {
 	@PutMapping
 	@Operation(summary="Atualizar os dados de atividade", description  = "Atividade atualizada")
 	@ApiResponses(value = { 
-			  @ApiResponse(responseCode = "200", description = "Listado com sucesso"),
+			  @ApiResponse(responseCode = "200", description = "Atualiza com sucesso"),
 			  @ApiResponse(responseCode = "400", description = "ID Inválido"), 
 			  @ApiResponse(responseCode = "403", description = "Você não tem permissão para acessar recurso"), 
 			  @ApiResponse(responseCode = "404", description = "Recurso não encontrado")})
@@ -88,7 +88,7 @@ public class AtividadeController {
 	@DeleteMapping("/{id}")
 	@Operation(summary="Remover uma atividade", description  = "Atividade removida")
 	@ApiResponses(value = { 
-			  @ApiResponse(responseCode = "200", description = "Listado com sucesso"),
+			  @ApiResponse(responseCode = "200", description = "Deletado com sucesso"),
 			  @ApiResponse(responseCode = "400", description = "ID Inválido"), 
 			  @ApiResponse(responseCode = "403", description = "Você não tem permissão para acessar recurso"), 
 			  @ApiResponse(responseCode = "404", description = "Recurso não encontrado")})

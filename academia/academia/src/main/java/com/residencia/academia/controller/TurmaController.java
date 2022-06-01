@@ -49,7 +49,7 @@ public class TurmaController {
 
 	@GetMapping("/{id}")
 	@Operation(summary = "Retornar uma turma", description = "Turma")
-	@ApiResponses(value = { @ApiResponse(responseCode = "200", description = "Listado com sucesso"),
+	@ApiResponses(value = { @ApiResponse(responseCode = "200", description = "Buscado com sucesso"),
 			@ApiResponse(responseCode = "400", description = "ID Inválido"),
 			@ApiResponse(responseCode = "403", description = "Você não tem permissão para acessar recurso"),
 			@ApiResponse(responseCode = "404", description = "Recurso não encontrado") })
@@ -63,7 +63,7 @@ public class TurmaController {
 
 	@GetMapping("/dto/{id}")
 	@Operation(summary = "Retornar uma turma", description = "Turma")
-	@ApiResponses(value = { @ApiResponse(responseCode = "200", description = "Listado com sucesso"),
+	@ApiResponses(value = { @ApiResponse(responseCode = "200", description = "Buscado com sucesso"),
 			@ApiResponse(responseCode = "400", description = "ID Inválido"),
 			@ApiResponse(responseCode = "403", description = "Você não tem permissão para acessar recurso"),
 			@ApiResponse(responseCode = "404", description = "Recurso não encontrado") })
@@ -77,7 +77,7 @@ public class TurmaController {
 
 	@PostMapping
 	@Operation(summary = "Inserir os dados de turma", description = "Turma adicionada")
-	@ApiResponses(value = { @ApiResponse(responseCode = "200", description = "Listado com sucesso"),
+	@ApiResponses(value = { @ApiResponse(responseCode = "200", description = "Salvo com sucesso"),
 			@ApiResponse(responseCode = "400", description = "ID Inválido"),
 			@ApiResponse(responseCode = "403", description = "Você não tem permissão para acessar recurso"),
 			@ApiResponse(responseCode = "404", description = "Recurso não encontrado") })
@@ -87,7 +87,7 @@ public class TurmaController {
 
 	@PostMapping("/dto")
 	@Operation(summary = "Inserir os dados de turma", description = "Turma adicionada")
-	@ApiResponses(value = { @ApiResponse(responseCode = "200", description = "Listado com sucesso"),
+	@ApiResponses(value = { @ApiResponse(responseCode = "200", description = "Salvo com sucesso"),
 			@ApiResponse(responseCode = "400", description = "ID Inválido"),
 			@ApiResponse(responseCode = "403", description = "Você não tem permissão para acessar recurso"),
 			@ApiResponse(responseCode = "404", description = "Recurso não encontrado") })
@@ -98,7 +98,7 @@ public class TurmaController {
 	
 	@PutMapping
 	@Operation(summary = "Atualizar os dados de turma", description = "Turma atualizada")
-	@ApiResponses(value = { @ApiResponse(responseCode = "200", description = "Listado com sucesso"),
+	@ApiResponses(value = { @ApiResponse(responseCode = "200", description = "Atualizado com sucesso"),
 			@ApiResponse(responseCode = "400", description = "ID Inválido"),
 			@ApiResponse(responseCode = "403", description = "Você não tem permissão para acessar recurso"),
 			@ApiResponse(responseCode = "404", description = "Recurso não encontrado") })
@@ -113,7 +113,7 @@ public class TurmaController {
 
 	@DeleteMapping("/{id}")
 	@Operation(summary = "Remover uma turma", description = "Turma removida")
-	@ApiResponses(value = { @ApiResponse(responseCode = "200", description = "Listado com sucesso"),
+	@ApiResponses(value = { @ApiResponse(responseCode = "200", description = "Deletado com sucesso"),
 			@ApiResponse(responseCode = "400", description = "ID Inválido"),
 			@ApiResponse(responseCode = "403", description = "Você não tem permissão para acessar recurso"),
 			@ApiResponse(responseCode = "404", description = "Recurso não encontrado") })

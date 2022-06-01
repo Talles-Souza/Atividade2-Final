@@ -55,7 +55,7 @@ public class InstrutorController {
 	@GetMapping("/dto/{id}")
 	@Operation(summary="Retornar um instrutor", description  = "Intrutor")
 	@ApiResponses(value = { 
-			  @ApiResponse(responseCode = "200", description = "Listado com sucesso"),
+			  @ApiResponse(responseCode = "200", description = "Buscado com sucesso"),
 			  @ApiResponse(responseCode = "400", description = "ID Inválido"), 
 			  @ApiResponse(responseCode = "403", description = "Você não tem permissão para acessar recurso"), 
 			  @ApiResponse(responseCode = "404", description = "Recurso não encontrado")})
@@ -70,7 +70,7 @@ public class InstrutorController {
 	@GetMapping("/{id}")
 	@Operation(summary="Retornar um instrutor", description  = "Instrutor")
 	@ApiResponses(value = { 
-			  @ApiResponse(responseCode = "200", description = "Listado com sucesso"),
+			  @ApiResponse(responseCode = "200", description = "Buscado com sucesso"),
 			  @ApiResponse(responseCode = "400", description = "ID Inválido"), 
 			  @ApiResponse(responseCode = "403", description = "Você não tem permissão para acessar recurso"), 
 			  @ApiResponse(responseCode = "404", description = "Recurso não encontrado")})
@@ -86,7 +86,7 @@ public class InstrutorController {
 	@ResponseStatus(HttpStatus.CREATED)
 	@Operation(summary="Inserir os dados de instrutor", description  = "Instrutor")
 	@ApiResponses(value = { 
-			  @ApiResponse(responseCode = "200", description = "Listado com sucesso"),
+			  @ApiResponse(responseCode = "200", description = "Salvo com sucesso"),
 			  @ApiResponse(responseCode = "400", description = "ID Inválido"), 
 			  @ApiResponse(responseCode = "403", description = "Você não tem permissão para acessar recurso"), 
 			  @ApiResponse(responseCode = "404", description = "Recurso não encontrado")})
@@ -98,7 +98,7 @@ public class InstrutorController {
 	@PostMapping("/dto")
 	@Operation(summary="Inserir os dados de instrutor", description  = "Instrutor")
 	@ApiResponses(value = { 
-			  @ApiResponse(responseCode = "200", description = "Listado com sucesso"),
+			  @ApiResponse(responseCode = "200", description = "Atualizado com sucesso"),
 			  @ApiResponse(responseCode = "400", description = "ID Inválido"), 
 			  @ApiResponse(responseCode = "403", description = "Você não tem permissão para acessar recurso"), 
 			  @ApiResponse(responseCode = "404", description = "Recurso não encontrado")})
@@ -110,7 +110,7 @@ public class InstrutorController {
 	@PutMapping
 	@Operation(summary="Atualizar os dados de instrutor", description  = "Instrutor atualizado")
 	@ApiResponses(value = { 
-			  @ApiResponse(responseCode = "200", description = "Listado com sucesso"),
+			  @ApiResponse(responseCode = "200", description = "Atualizado com sucesso"),
 			  @ApiResponse(responseCode = "400", description = "ID Inválido"), 
 			  @ApiResponse(responseCode = "403", description = "Você não tem permissão para acessar recurso"), 
 			  @ApiResponse(responseCode = "404", description = "Recurso não encontrado")})
@@ -125,7 +125,7 @@ public class InstrutorController {
 	@DeleteMapping("/{id}")
 	@Operation(summary="Remover um instrutor", description  = "Instrutor removido")
 	@ApiResponses(value = { 
-			  @ApiResponse(responseCode = "200", description = "Listado com sucesso"),
+			  @ApiResponse(responseCode = "200", description = "Deletado com sucesso"),
 			  @ApiResponse(responseCode = "400", description = "ID Inválido"), 
 			  @ApiResponse(responseCode = "403", description = "Você não tem permissão para acessar recurso"), 
 			  @ApiResponse(responseCode = "404", description = "Recurso não encontrado")})
